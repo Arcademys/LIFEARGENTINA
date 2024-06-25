@@ -1,3 +1,4 @@
+/* Estilos globales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -68,7 +69,6 @@ footer {
     display: flex;
     background-color: #87bdd8;
     padding: 20px;
-    /* border: 1px solid #000;  Borde para la sección del héroe */
 }
 
 .hero-text {
@@ -78,7 +78,6 @@ footer {
     flex-direction: column;
     justify-content: center;
     padding: 20px;
-    /* border: 1px solid #000;  Borde para la caja de texto del héroe */
 }
 
 .hero-text h1 {
@@ -101,7 +100,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid #000;  Borde para la imagen del héroe */
 }
 
 .hero-image img {
@@ -114,7 +112,6 @@ footer {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    /* border: 1px solid #000;  Borde para la sección de cajas de información */
 }
 
 .info-box {
@@ -126,7 +123,6 @@ footer {
     text-decoration: none;
     color: black;
     transition: transform 0.2s;
-    /* border: 1px solid #000;  Borde para cada caja de información */
 }
 
 .info-box:hover {
@@ -134,31 +130,23 @@ footer {
 }
 
 #who-we-are {
-    background-color: #c9ddf0; /* Khaki */
+    background-color: #c9ddf0;
 }
 
 #where-we-work {
-    background-color: #f9e98d; /* Light Blue */
+    background-color: #f9e98d;
 }
 
 #partnerships {
-    background-color: #4a9c97; /* Light Green */
+    background-color: #4a9c97;
 }
 
 #how-to-help {
-    background-color: #2a63a6; /* Light Pink */
+    background-color: #2a63a6;
 }
 
 .info-box img {
     height: 100px;
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: white;
-    /* border: 1px solid #000;  Borde para el pie de página */
 }
 
 footer .social-icons a {
@@ -167,13 +155,13 @@ footer .social-icons a {
 }
 
 footer .social-icons img {
-    height: 100px; /* Ajusta el tamaño de los iconos aquí */
+    height: 100px;
     width: auto;
 }
 
 /* Estilos específicos para la página wherewework.html */
 .where-we-work .content {
-    text-align: left; /* Alinea el texto a la izquierda */
+    text-align: left;
 }
 
 .where-we-work .content-flex {
@@ -187,7 +175,7 @@ footer .social-icons img {
     margin-right: 20px;
 }
 
-.where-we-work .text-container p, 
+.where-we-work .text-container p,
 .where-we-work .text-container ul {
     font-size: 1.2em;
     line-height: 1.6;
@@ -219,4 +207,85 @@ footer .social-icons img {
     max-width: 100%;
     height: auto;
     border: 1px solid #000;
+}
+
+/* Media Queries para Responsividad */
+
+/* Estilo para pantallas menores de 768px */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header .logo {
+        height: 80px;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    header nav a {
+        margin: 5px 0;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .hero-text h1 {
+        font-size: 1.5em;
+    }
+
+    .hero-text p {
+        font-size: 0.9em;
+    }
+
+    .info-boxes {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .info-box {
+        margin: 10px 0;
+    }
+
+    footer .social-icons img {
+        height: 50px;
+    }
+}
+
+/* Estilo para pantallas menores de 480px */
+@media (max-width: 480px) {
+    header .logo {
+        height: 60px;
+    }
+
+    .hero-text h1 {
+        font-size: 1.2em;
+    }
+
+    .hero-text p {
+        font-size: 0.8em;
+    }
+
+    .info-boxes {
+        padding: 5px;
+    }
+
+    .info-box {
+        padding: 10px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    footer .social-icons img {
+        height: 40px;
+    }
 }
